@@ -1,5 +1,5 @@
 import "./App.css";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function Home() {
   return (
@@ -11,6 +11,14 @@ function Home() {
       <h1>My Website</h1>
     </div>
   );
+}
+
+export function History() {
+  return (
+    <div>
+      <h1>Our History</h1>
+    </div>
+  )
 }
 
 export function About() {
