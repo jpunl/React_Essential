@@ -8,24 +8,21 @@ function App() {
     e.preventDefault();
     alert(`${title}, ${color}`);
     setTitle("");
-    setColor("#000000");
+    setColor("#000000")
   };
   return (
     <form onSubmit={submit}>
       <input
         value={title}
-        onChange={(event) =>
-          setTitle(event.target.value)
-        }
+        onChange={(event) => setTitle(event.target.value)}
         type="text"
         placeholder="color title..."
       />
       <input
         value={color}
+        onChange={event => setColor(event.target.value)}
         type="color"
-        onChange={(event) =>
-          setColor(event.target.value)
-        }
+
       />
       <button>ADD</button>
     </form>
